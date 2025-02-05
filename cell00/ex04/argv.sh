@@ -2,9 +2,13 @@
 
 if [ $# -eq 0 ]; then
     echo "No argument supplied"
-    exit 1
+elif [ $# -eq 1 ]; then 
+    echo "${1}"
+elif [ $# -eq 2 ]; then 
+    echo "${1}"
+    echo "${2}"
+else
+    echo "${1}"
+    echo "${2}"
+    echo "${3}"
 fi
-
-echo "${1:-None}"
-echo "${2:-None}"
-echo "${3:-None}"
