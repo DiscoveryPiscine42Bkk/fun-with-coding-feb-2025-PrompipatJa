@@ -9,16 +9,23 @@
             margin: 0;
         }
         .container {
-            display: flex;
-            flex-direction: row;
-            width: 100%;
+            width: 100vw;
             height: 100vh;
+            display: table;
+        }
+        .container tr {
+            display: table-row;
+            width: 100%;
         }
         .box1, .box2 {
-            flex-grow: 1;
+            width: 50%;
+            height: 100vh;
+            display: table-cell;
             padding: 20px;
             font-size: 24px;
             color: white;
+            text-align: center;
+            vertical-align: middle;
         }
         .box1 {
             background-color: red;
@@ -28,19 +35,30 @@
         }
         @media (max-width: 700px) {
             .container {
+                display: flex;
+                flex-grow: 1;
+            }
+            .container tr {
+                display: flex;
                 flex-direction: column;
-            }   
+                width: 100vw;
+            }
+            .box1, .box2 {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 100vw;
+                height: 50vh;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="box1">
-            <p>First Cell</p>
-        </div>
-        <div class="box2">
-            <p>Second Cell</p>
-        </div>
-    </div>
+    <table class="container">
+        <tr>
+            <td class="box1">First Cell</td>
+            <td class="box2">Second Cell</td>
+        </tr>
+    </table>
 </body>
 </html>
