@@ -1,0 +1,26 @@
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #d4d4d4;
+    width: 150px;
+    padding: 12px;
+    z-index: 1;
+}
+
+.topic {
+    background-color: pink;
+    padding: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    cursor: pointer;
+}
+
+.dropdown-content p:hover {
+    background-color: #f1f1f1;
+}
