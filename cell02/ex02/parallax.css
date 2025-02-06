@@ -1,24 +1,32 @@
-body {
+body, html {
     margin: 0;
-    font-family: Arial, sans-serif;
+    padding: 0;
+    height: 100%;
 }
-.section {
+
+.bg-1, .bg-2, .bg-3 {
+    position: relative;
     height: 100vh;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     text-align: center;
     color: white;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
 }
-.background {
-    background: url(https://images.ctfassets.net/hrltx12pl8hq/1D85eAdM0IhXrEYsoOt7Ut/107424ea3e7e10ab3203446dae175cf7/3_jungle_animals.webp) no-repeat center center/cover;
+
+.bg-1 {
+    background: url('https://www.stockvault.net/data/2007/03/01/100489/thumb16.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
 }
-.black-block {
+
+.bg-2 {
     background: black;
     color: white;
 }
-.bottom-image {
-    background: url(https://images.unsplash.com/photo-1598755257130-c2aaca1f061c?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8d2lsZCUyMGFuaW1hbHxlbnwwfHwwfHx8MA%3D%3D) no-repeat center center/cover;
+
+.bg-3 {
+    background: url('https://cdn.pixabay.com/photo/2024/05/08/17/45/animal-8748794_1280.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
 }
