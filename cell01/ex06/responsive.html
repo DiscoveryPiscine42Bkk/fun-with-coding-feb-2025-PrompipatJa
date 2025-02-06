@@ -9,23 +9,19 @@
             margin: 0;
         }
         .container {
-            width: 100vw;
+            width: 100vw; 
             height: 100vh;
             display: table;
         }
         .container tr {
             display: table-row;
-            width: 100%;
         }
         .box1, .box2 {
             width: 50%;
-            height: 100vh;
             display: table-cell;
-            padding: 20px;
             font-size: 24px;
             color: white;
             text-align: center;
-            vertical-align: middle;
         }
         .box1 {
             background-color: red;
@@ -34,10 +30,6 @@
             background-color: blue;
         }
         @media (max-width: 700px) {
-            .container {
-                display: flex;
-                flex-grow: 1;
-            }
             .container tr {
                 display: flex;
                 flex-direction: column;
