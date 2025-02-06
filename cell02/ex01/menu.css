@@ -1,10 +1,8 @@
-.dropdown {
-    position: relative;
-    display: inline-block;
+.dd {
+    width: 150px;
 }
-.dropdown-content {
+.dd-content {
     display: none;
-    position: absolute;
     background-color: #d4d4d4;
     width: 150px;
     padding: 12px;
@@ -16,11 +14,11 @@
     padding: 10px;
 }
 
-.dropdown:hover .dropdown-content {
+.dd:hover .dd-content {
     display: block;
     cursor: pointer;
 }
 
-.dropdown-content p:hover {
+.dd-content p:hover {
     background-color: #f1f1f1;
 }
