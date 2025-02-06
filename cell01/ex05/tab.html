@@ -7,7 +7,12 @@
     <style>
         .container {
             display: flex;
-            width: 100%;
+            width: 100vw;
+        }
+        tr {
+            display: flex;
+            width: 100vw;
+
         }
         .box1 {
             background-color: red;
@@ -22,14 +27,12 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="box1">
-            <p>first cell</p>
-        </div>
-        <div class="box2">
-            <p>second cell</p>
-        </div>
+    <table class="container">
+        <tr>
+            <td class="box1">first cell</td>
+            <td class="box2">second cell</td>
+        </tr>
 
-    </div>
+    </table>
 </body>
 </html>
